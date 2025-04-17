@@ -12,30 +12,12 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
-  title: 'Personal Homepage Demo',
+  title: 'Fabrice Monnier - Freelance DevOps / Architecture / Cloud ',
 };
 ---
 
 <Layout metadata={metadata}>
-  <Fragment slot="announcement"></Fragment>
-  <Fragment slot="header">
-    <Header
-      links={[
-        { text: 'Home', href: '#' },
-        { text: 'About', href: '#about' },
-        { text: 'Resume', href: '#resume' },
-        { text: 'Blog', href: '#blog' }
-      ]}
-      actions={[
-        {
-          text: 'Contact me',
-          href: getPermalink('/contact#form'),
-        },
-      ]}
-      isSticky
-      showToggleTheme
-    />
-  </Fragment>
+
 
   <!-- Hero2 Widget ******************* -->
 
@@ -43,10 +25,10 @@ const metadata = {
     id="hero"
     title="Fabrice Monnier"
     tagline="Freelance DevOps - Architecture - Cloud"
-    actions={[{ variant: 'primary', text: 'Contact me', href: getPermalink('/contact#form') }]}
+    actions={[{ variant: 'primary', text: 'Contact me', href: getPermalink('#contact') }]}
   >
     <Fragment slot="subtitle">
-      I’m an IT expert with over 20 years of experience, helping businesses design and technical solutions that address real-world challenges. <br />
+      I’m an IT expert with over 20 years of experience, helping businesses design technical solutions that address real-world challenges. <br />
       My specialities are DevOps, Backend Development and Cloud Computing.
     </Fragment>
   </Hero>
@@ -89,16 +71,46 @@ const metadata = {
     items={[
       {
         title:
-          'Solutions Consultant <br /> <span class="font-normal">Ataccama, Paris (Full Remote), France</span> <br /> <span class="text-sm font-normal">2022 - Present</span>',
-        description: `Demonstrate the business value of Attacama's product to prospects through proof of concepts and workshops. <br /> Support Implement prototypes Develop tailoredbranding solutions, including logos, color palettes, and brand guidelines. <br /> Design marketing materials such as brochures, posters, and digital assets. <br /> Create visually appealing user interfaces for websites and applications.`,
+          'Solutions Consultant <br /> <span class="font-normal">Ataccama (Data Quality SaaS vendor), Paris (Full Remote), France</span> <br /> <span class="text-sm font-normal">2022 - Present</span>',
+        description: `Demonstrate the business value of Attacama's product to prospects through proof of concepts and workshops. <br /> Prototypes (e.g. integration to Databricks, AWS, Azure). <br />`,
         icon: 'tabler:briefcase',
       },
       {
         title:
-          'Junior Graphic Designer <br /> <span class="font-normal">XYZ Creative Agency, Los Angeles, CA</span> <br /> <span class="text-sm font-normal">2018 - 2021</span>',
-        description: `Assisted senior designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
+          'AWS Solutions Architect <br /> <span class="font-normal">Amazon Web Services, Paris, France</span> <br /> <span class="text-sm font-normal">2021 - 2022</span>',
+        description: `Assisted existing clients and prospects in building cloud architectures on AWS. <br /> Delivered proof of concepts. <br /> Presented webinars, organized workshops to demonstrate AWS value proposal.`,
         icon: 'tabler:briefcase',
       },
+      {
+        title:
+          'Technical Architect <br /> <span class="font-normal">Societe Generale Investment Banking, Paris, France</span> <br /> <span class="text-sm font-normal">2020 - 2021</span>',
+        description: `Technical architect for the Risk IT Department at SGIB, supporting development teams in Paris and Bangalore in migrating the Risk Information System to Microsoft Azure public cloud. <br /> Java, Spark, Kafka, Hadoop, Docker, Kubernetes, Microsoft Azure (HDInsight, AKS).`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Senior Technical Leader - Cloud & Big Data <br /> <span class="font-normal">Societe Generale Investment Banking, Paris, France</span> <br /> <span class="text-sm font-normal">2017 - 2020</span>',
+        description: `Technical lead for the central repository of pre-trade and post-trade data at SGIB, aggregated for regulatory reporting and risk analysis. <br /> Designed and developed APIs using the Java Spring Boot / Spring Cloud stack.<br /> Architected and built large-scale data processing pipelines on Hadoop/Spark and Microsoft Azure.<br /> Led the progressive migration of data processing workflows to Azure cloud.<br /> Managed a team of 10 developers in Paris and 2 developers in India.`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Technical Leader & Scrum Master - Full Stack <br /> <span class="font-normal">Lyxor Asset Management, Paris, France</span> <br /> <span class="text-sm font-normal">2014 - 2010</span>',
+        description: `Full-stack developer & technical lead<br /> Front End: Apache/PHP/MySQL, AngularJS, jQuery, Bootstrap. <br /> Back End: Java, SOAP web services, custom computation engine interfacing with an Oracle 11G database via JMS queue.`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Technical Leader & Project Manager <br /> <span class="font-normal">Societe Generale / Risk Management, Paris, France</span> <br /> <span class="text-sm font-normal">2010 - 2014</span>',
+        description: `Large scale regulatory program (Basel 2 compliance). <br /> Team management (2 Business Analysts, 6 Developers). <br /> Project Management. <br /> Coordination with off-shore team in Bangalore (1 Business Analyst/4 Developers). <br /> Technical & Functional Lead.`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Senior Developer <br /> <span class="font-normal">Reuters Financial Software, Paris, France</span> <br /> <span class="text-sm font-normal">2002 - 2010</span>',
+        description: `C, C++ and Java developer. <br /> Web developer (JSP, Servlets).`,
+        icon: 'tabler:briefcase',
+      }
     ]}
     classes={{ container: 'max-w-3xl' }}
   />
@@ -125,64 +137,60 @@ const metadata = {
 
   <Features3
     title="Skills"
-    subtitle="Discover the proficiencies that allow me to bring imagination to life through design."
+    subtitle="Discover the proficiencies that allow me to deliver value through software craftmanship."
     columns={3}
     defaultIcon="tabler:point-filled"
     items={[
       {
-        title: 'Graphic design',
-        description: 'Proficient in crafting visually appealing designs that convey messages effectively.',
+        title: 'Cloud Computing',
+        description: 'Proficient in operating and building applications for AWS and Microsoft Azure.',
       },
       {
-        title: 'Branding and identity',
-        description: 'Skilled at developing cohesive brand identities, including logos and brand guidelines.',
+        title: 'Data Platforms',
+        description: 'Extensive knowledge of Cloud warehouses (Snowflake, Amazon Redshift), Streaming platforms (Kafka, JMS, Amazon Kinesis), Big data ecosystem (Hadoop, Spark, Hive, HBase, Databricks) and relational databases (PostgreSQL, Oracle, SQL Server).',
       },
       {
-        title: 'User-centered design',
-        description: 'Experienced in creating user-friendly interfaces and optimizing user experiences.',
+        title: 'Languages/Frameworks',
+        description: 'Deep knowledge of Java, Python, Spring framework (Spring Core, Spring Boot, Spring CLoud), NodeJS, Apache NiFi, and much more',
       },
       {
-        title: 'Adobe Creative Suite',
-        description: 'Skilled in using Photoshop, Illustrator, and InDesign to create and edit visual elements.',
+        title: 'DevOps',
+        description: 'Fluent with Maven, Jenkins, Sonar, GitHub, GitLab, ElasticSearch, Logstash, Kibana, Docker/Kubernetes.',
       },
       {
-        title: 'Typography',
-        description: 'Adept in selecting and manipulating typefaces to enhance design aesthetics.',
+        title: 'Delivery processes',
+        description: 'Experience in project management and Agile processes.',
       },
       {
-        title: 'Color theory',
-        description: 'Proficient in using color to evoke emotions and enhance visual harmony.',
-      },
-      {
-        title: 'Print and digital design',
-        description: 'Knowledgeable in designing for both print materials and digital platforms.',
-      },
-      {
-        title: 'Attention to detail',
-        description: 'Diligent in maintaining precision and quality in all design work.',
-      },
-      {
-        title: 'Adaptability',
-        description: 'Quick to adapt to new design trends, technologies, and client preferences.',
-      },
+        title: 'Software Craftmanship',
+        description: 'Skilled with unit testing, TDD, BDD, Mocks/Stubs, Pair programming, refactoring.',
+      }
     ]}
   />
 
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Let's create together"
-    subtitle="Ready to transform your vision into captivating designs?"
+    id="contact"
+    title="Let's connect"
+    subtitle="Whether you are looking for help on your projects, or just willing to chat."
     actions={[
       {
         variant: 'primary',
-        text: 'Hire me',
-        href: '/',
+        text: 'E-Mail',
+        href: 'mailto:contact@fabricemonnier.com',
+        icon: 'tabler:mail'
       },
+      {
+        variant: 'primary',
+        text: 'LinkedIn',
+        href: 'https://www.linkedin.com/in/monnierf/',
+        icon: 'tabler:brand-linkedin'
+      }
     ]}
   />
 
-  <!-- BlogLatestPost Widget **************** -->
+  <!-- BlogLatestPost Widget **************** 
 
   <BlogLatestPosts
     id="blog"
@@ -192,5 +200,5 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </BlogLatestPosts>
+  </BlogLatestPosts> -->
 </Layout>

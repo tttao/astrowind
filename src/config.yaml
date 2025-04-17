@@ -1,6 +1,6 @@
 site:
   name: Fabrice Monnier
-  site: 'https://astrowind.vercel.app'
+  site: 'https://fabricemonnier.com'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Fabrice Monnier
+    template: '%s — Fabrice Monnier'
+  description: "Experienced software architect specializing in AWS, cloud-native systems, and devops processes."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Fabrice Monnier
     images:
       - url: '~/assets/images/default.png'
         width: 1200
@@ -66,7 +66,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
+      id: G-TPKQNTP81Y
 
 ui:
   theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
