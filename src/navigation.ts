@@ -4,8 +4,22 @@ export const headerData = {
   links: [
     { text: 'Home', href: '#' },
     { text: 'About', href: '#about' },
+    { text: 'Resume', href: '#resume' }
+  ],
+  actions: [
+    {
+      text: 'Contact me',
+      href: '#contact',
+    }
+  ]
+};
+
+export const headerBlogData = {
+  links: [
+    { text: 'Home', href: '#' },
+    { text: 'About', href: '#about' },
     { text: 'Resume', href: '#resume' },
-   // { text: 'Blog', href: '#blog' }
+    { text: 'Blog', href: '#blog' }
   ],
   actions: [
     {

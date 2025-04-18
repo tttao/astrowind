@@ -1,3 +1,3 @@
 import 'dotenv/config'
 
-export default function blogEnabled() {return process.env.BLOG_ENABLED;}
+export default function blogEnabled() {return "true" === process.env.BLOG_ENABLED;}

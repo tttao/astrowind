@@ -7,6 +7,8 @@ import Announcement from '~/components/widgets/Announcement.astro';
 import blogEnabled from '~/../envConfig';
 
 import { headerData } from '~/navigation';
+import { headerBlogData } from '~/navigation';
+
 
 import type { MetaData } from '~/types';
 
@@ -23,7 +25,12 @@ if (blogEnabled()) {
 
 <Layout metadata={metadata}>
   <slot name="header">
-    <Header {...headerData} isSticky showToggleTheme />
+    {blogEnabled() &&
+    <Header {...headerBlogData} isSticky showToggleTheme />
+    }
+    {!blogEnabled() &&
+      <Header {...headerData} isSticky showToggleTheme />
+    }
   </slot>
   <main>
     <slot />
