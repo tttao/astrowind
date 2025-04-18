@@ -6,4 +6,4 @@ image: "12-Factor Apps vs Cloud-Native Apps: What's the Difference and Why It Ma
 publishDate: 2025-04-18T16:38:00.000Z
 author: Fabrice Monnier
 ---
-![](/_astro/pexels-thisisengineering-3861972.jpg)
+![](/assets/blog/pexels-thisisengineering-3861972.jpg)
