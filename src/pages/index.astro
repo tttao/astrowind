@@ -10,7 +10,7 @@ import Testimonials from '~/components/widgets/Testimonials.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import { getPermalink } from '~/utils/permalinks';
-
+import blogEnabled from '~/../envConfig';
 const metadata = {
   title: 'Fabrice Monnier - Freelance DevOps / Architecture / Cloud ',
 };
@@ -190,8 +190,8 @@ const metadata = {
     ]}
   />
 
-  <!-- BlogLatestPost Widget **************** 
-
+  <!-- BlogLatestPost Widget **************** -->
+  {blogEnabled() && 
   <BlogLatestPosts
     id="blog"
     title="Explore my insightful articles on my blog"
@@ -200,5 +200,5 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </BlogLatestPosts> -->
+  </BlogLatestPosts>}
 </Layout>
