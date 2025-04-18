@@ -9,6 +9,7 @@
   },
   "scripts": {
     "dev": "astro dev",
+    "prod": "astro --config astro.prod.config.ts dev",
     "host": "astro dev --host",
     "start": "astro dev",
     "build": "astro build",
@@ -31,6 +32,7 @@
     "@fontsource-variable/inter": "^5.2.5",
     "astro-embed": "^0.9.0",
     "astro-icon": "^1.1.5",
+    "dotenv": "^16.5.0",
     "ftp-deploy": "^2.4.7",
     "limax": "4.1.0",
     "lodash.merge": "^4.6.2",
