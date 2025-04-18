@@ -9,7 +9,6 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "prod": "astro --config astro.prod.config.ts dev",
     "host": "astro dev --host",
     "start": "astro dev",
     "build": "astro build",
