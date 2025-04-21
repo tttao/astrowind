@@ -16,8 +16,8 @@ Published in 2011 by [Heroku](https://www.heroku.com/) cofounder [Adam Wiggins](
 
 1. **Codebase.** The application's code is versioned and is the same across all deploys.
 2. **Dependencies.** All dependencies are explicitly defined in a manifest (e.g. package.json file for NodeJS projects, pom.xml file for Maven projects). The application should not rely on any implicit dependency -e.g. a system-wide package-. 
-3. **Config.** There should be a strict separation of config and code. In other words (quoting <https://12factor.net/>), "Config varies substantially across deploys, code does not".
-4. **Backing services**
+3. **Config.** There should be a strict separation of config and code. In other words (quoting <https://12factor.net/>), "Config varies substantially across deploys, code does not". Configuration should be stored as environment variables.
+4. **Backing services.** The Twelve-Factor App methodology defines backing services as all services that the application consumes over the network -e.g. databases, APIs, messaging systems, etc.-. All backing services should be considered as resources and accessed via a URL or a service locator, stored in the config.
 5. **Build, release, run**
 6. **Processes**
 7. **Port binding**
