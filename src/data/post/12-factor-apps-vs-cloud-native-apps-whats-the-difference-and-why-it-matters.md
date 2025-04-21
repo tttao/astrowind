@@ -12,11 +12,11 @@ Intro
 
 ## The Twelve-Factor App methodology
 
-The Twelve-Factor App provides a methodology for building SaaS (software-as-a-service) applications. The methodology is a synthesis of best practices for build
+Published in 2011 by [Heroku](https://www.heroku.com/) cofounder [Adam Wiggins](https://adamwiggins.com), the Twelve-Factor App provides best practices for building SaaS (software-as-a-service) applications. The methodology breaks down those best practices  into 12 factors:
 
-1. **Codebase**
-2. **Dependencies**
-3. **Config**
+1. **Codebase.** The application's code is versioned and is the same across all deploys.
+2. **Dependencies.** All dependencies are explicitly defined in a manifest (e.g. package.json file for NodeJS projects, pom.xml file for Maven projects). The application should not rely on any implicit dependency -e.g. a system-wide package-. 
+3. **Config.** There should be a strict separation of config and code. In other words (quoting <https://12factor.net/>), "Config varies substantially across deploys, code does not".
 4. **Backing services**
 5. **Build, release, run**
 6. **Processes**
@@ -27,8 +27,6 @@ The Twelve-Factor App provides a methodology for building SaaS (software-as-a-se
 11. **Logs**
 12. **Admin processes**
 
-### Run admin/management tasks as one-off processes
-
 ## Definition(s) of a Cloud-Native application
 
 ## Twelve-Factor App: the Foundation for Cloud-Native
@@ -36,3 +34,5 @@ The Twelve-Factor App provides a methodology for building SaaS (software-as-a-se
 ## Why It Matters for Modern Application Development
 
 ## Further Reading
+
+Matt Stine, Migrating to cloud-native application architectures
