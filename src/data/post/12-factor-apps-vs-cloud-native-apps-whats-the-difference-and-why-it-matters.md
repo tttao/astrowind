@@ -10,22 +10,29 @@ author: Fabrice Monnier
 ---
 Intro
 
-# What is the Twelve-Factor App?
+## The Twelve-Factor App methodology
 
-The Twelve-Factor App is a methodology for building SaaS (software-as-a-service) applications. The methodology is a synthesis of best practices for build
+The Twelve-Factor App provides a methodology for building SaaS (software-as-a-service) applications. The methodology is a synthesis of best practices for build
 
+1. **Codebase**
+2. **Dependencies**
+3. **Config**
+4. **Backing services**
+5. **Build, release, run**
+6. **Processes**
+7. **Port binding**
+8. **Concurrency**
+9. **Disposability**
+10. **Dev/prod parity**
+11. **Logs**
+12. **Admin processes**
 
+### Run admin/management tasks as one-off processes
 
-# What is a Cloud-Native application
+## Definition(s) of a Cloud-Native application
 
+## Twelve-Factor App: the Foundation for Cloud-Native
 
+## Why It Matters for Modern Application Development
 
-# Overlaps and Differences
-
-
-
-# Why It Matters for Modern Application Development
-
-
-
-# Sources/References
+## Further Reading
