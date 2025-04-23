@@ -1,6 +1,7 @@
 ---
 title: "12-Factor Apps vs Cloud-Native Apps: What's the Difference and Why It Matters"
-excerpt: Excertp blablabla
+excerpt: Foundations for building secure, resilient, manageable, sustainable,
+  and observable applications.
 category: Software design
 tags:
   - ARCHITECTURE
