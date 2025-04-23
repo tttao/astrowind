@@ -39,6 +39,12 @@ Despite its age, the methodology remains highly relevant and continues to provid
 
 ## Definition(s) of a Cloud-Native application
 
+> Cloud native practices empower organizations to develop, build, and deploy workloads in computing environments (public, private, hybrid cloud) to meet their organizational needs at scale in a programmatic and repeatable manner. It **is characterized by loosely coupled systems that interoperate in a manner that is secure, resilient, manageable, sustainable, and observable.**
+>
+> Cloud native technologies and architectures typically consist of some combination of containers, service meshes, multi-tenancy, microservices, immutable infrastructure, serverless, and declarative APIs — this list is non-exhaustive.
+
+
+
 ## Twelve-Factor App: the Foundation for Cloud-Native
 
 ## Why It Matters for Modern Application Development
@@ -46,3 +52,9 @@ Despite its age, the methodology remains highly relevant and continues to provid
 ## Further Reading
 
 Matt Stine, Migrating to cloud-native application architectures
+
+AWS, https://aws.amazon.com/what-is/cloud-native/
+
+https://www.cncf.io/
+
+https://github.com/cncf/toc/blob/main/DEFINITION.md
