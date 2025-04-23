@@ -8,7 +8,13 @@ image: https://media.fabricemonnier.com/pexels-thisisengineering-3861972.jpg
 publishDate: 2025-04-18T16:38:00.000Z
 author: Fabrice Monnier
 ---
-Intro
+Whether you are a seasoned software developer, a cloud enthousiast or a software architect, you might be familiar with the concept of Cloud-Native applications. 
+
+Maybe you are also already aware of the older 12-Factor App methodology? But do you know the differences between those two concepts?
+
+If the answer if no, this short article is what you need! If the answer is yes, you still might benefit from a refresher.
+
+In both cases, mastering those concepts will help you design more robust, scalable and resilient applications, whether for the Cloud, or for on-premises infrastructures.
 
 ## The Twelve-Factor App methodology
 
