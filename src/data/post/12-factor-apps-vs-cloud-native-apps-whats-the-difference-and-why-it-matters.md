@@ -24,14 +24,18 @@ Published in 2011 by [Heroku](https://www.heroku.com/) cofounder [Adam Wiggins](
 2. **Dependencies.** All dependencies are explicitly defined in a manifest (e.g. package.json file for NodeJS projects, pom.xml file for Maven projects). The application should not rely on any implicit dependency -e.g. a system-wide package-. 
 3. **Config.** There should be a strict separation of config and code. In other words (quoting <https://12factor.net/>), "Config varies substantially across deploys, code does not". Configuration should be stored as environment variables.
 4. **Backing services.** The Twelve-Factor App methodology defines backing services as all services that the application consumes over the network -e.g. databases, APIs, messaging systems, etc.-. All backing services should be considered as resources and accessed via a URL or a service locator, stored in the config.
-5. **Build, release, run.** The application lifecycle should be managed in three distinct stages: **the Build stage**, where the the codebase is converted into an immutable package. **The Release stage**, where 
-6. **Processes**
-7. **Port binding**
-8. **Concurrency**
-9. **Disposability**
-10. **Dev/prod parity**
-11. **Logs**
-12. **Admin processes**
+5. **Build, release, run.** The application lifecycle should be managed in three distinct, sequentials stages: **the Build stage**, where the codebase is converted into an immutable package. **The Release stage**, where the result of the Build stage is combined with the configuration, resulting in a versionned release ready to be deployed. And finally **the Run stage**, where the application is executed, as stateless and disposable processes. 
+6. **Processes.** The app consists in one or many stateless  and share-nothing processes. Statelessness and share-nothing paradigm are pre-requisite in order to achieve efficient horizontal scaling.
+7. **Port binding.** The app is a standalone service that listens on a port defined by the environment—no external web server required.
+8. **Concurrency.** Use multiple stateless processes to handle different tasks, and scale each process type independently.
+9. **Disposability.** Apps should be resilient and lightweight—able to start and stop quickly, making them easy to scale, deploy, and recover.
+10. **Dev/prod parity.** Make all environments consistent to reduce bugs and deployment issues.
+11. **Logs.** Output logs to the console and leave log management to external tools.
+12. **Admin processes.** Run admin/maintenance tasks as one-off processes in the same environment as the app.
+
+The Twelve-Factor App methodology, introduced over a decade ago, laid the foundation for what are now widely accepted best practices in modern application development. Its principles—such as strict separation of config, stateless processes, and environment parity—have become standard in today’s cloud-native and microservices architectures.
+
+Despite its age, the methodology remains highly relevant and continues to provide a solid blueprint for designing scalable, maintainable, and resilient SaaS applications. It’s a timeless guide that aligns naturally with the demands of modern development workflows and infrastructure.
 
 ## Definition(s) of a Cloud-Native application
 
