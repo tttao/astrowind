@@ -44,7 +44,7 @@ Despite its age, the methodology remains highly relevant and continues to provid
 >
 > Cloud native technologies and architectures typically consist of some combination of containers, service meshes, multi-tenancy, microservices, immutable infrastructure, serverless, and declarative APIs — this list is non-exhaustive.
 
-
+This is the definition from [CNCF](https://www.cncf.io/), the Clound Native Computing Foundation, an org 
 
 ## Twelve-Factor App: the Foundation for Cloud-Native
 
