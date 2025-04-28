@@ -16,10 +16,10 @@ export const headerData = {
 
 export const headerBlogData = {
   links: [
-    { text: 'Home', href: '#' },
-    { text: 'About', href: '#about' },
-    { text: 'Resume', href: '#resume' },
-    { text: 'Blog', href: '#blog' }
+    { text: 'Home', href: '/' },
+    { text: 'About', href: '/#about' },
+    { text: 'Resume', href: '/#resume' },
+    { text: 'Blog', href: '/blog' }
   ],
   actions: [
     {

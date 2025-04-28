@@ -25,6 +25,10 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 export default defineConfig({
   output: 'static',
 
+  security: {
+    checkOrigin: false
+  },
+
   integrations: [
     tailwind({
       applyBaseStyles: false,

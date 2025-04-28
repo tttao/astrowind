@@ -3,8 +3,8 @@ backend:
   repo: tttao/astrowind
   branch: main
 
-media_folder: 'src/assets/images'
-public_folder: '/_astro'
+media_folder: 'public/assets/blog'
+public_folder: '/assets/blog'
 
 collections:
   - name: 'post'
