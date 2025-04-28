@@ -49,9 +49,8 @@ The [CNCF](<>), the Cloud Native Computing Foundation, an non-profit organizatio
 >
 > Cloud native technologies and architectures typically consist of some combination of containers, service meshes, multi-tenancy, microservices, immutable infrastructure, serverless, and declarative APIs — this list is non-exhaustive.
 
-As 
 
-
+Cloud computing is built on the foundations of Infrastructure as a Service (IaaS) and Infrastructure as Code (IaC), offering scalable infrastructure and managed services that can dynamically grow or shrink based on workload demands. This elasticity not only optimizes cost but also reshapes how applications must be designed. To fully take advantage of the cloud, applications need to be distributed, resilient, and tolerant to failure — because, as Werner Vogels, CTO of AWS, famously put it, "everything fails all the time." Embracing this mindset means building systems that expect failure and recover gracefully rather than trying to avoid it entirely.
 
 ## Twelve-Factor App: the Foundation for Cloud-Native
 
