@@ -40,11 +40,18 @@ Despite its age, the methodology remains highly relevant and continues to provid
 
 ## Definition(s) of a Cloud-Native application
 
+
+Today, *cloud-native* is a widely adopted approach across the tech industry, but its original meaning has often been blurred or forgotten. Many teams claim to build cloud-native applications simply because they run in the cloud, overlooking the deeper principles like dynamic orchestration, resilience, observability, and continuous delivery. As the term became mainstream, it sometimes lost its connection to the architectural and operational practices that truly define it.
+
+The [CNCF](<>), the Cloud Native Computing Foundation, an non-profit organization which is part of the Linux foundation, defines 'Cloud Native' as:
+
 > Cloud native practices empower organizations to develop, build, and deploy workloads in computing environments (public, private, hybrid cloud) to meet their organizational needs at scale in a programmatic and repeatable manner. It **is characterized by loosely coupled systems that interoperate in a manner that is secure, resilient, manageable, sustainable, and observable.**
 >
 > Cloud native technologies and architectures typically consist of some combination of containers, service meshes, multi-tenancy, microservices, immutable infrastructure, serverless, and declarative APIs — this list is non-exhaustive.
 
-This is the definition from [CNCF](https://www.cncf.io/), the Clound Native Computing Foundation, an org 
+As 
+
+
 
 ## Twelve-Factor App: the Foundation for Cloud-Native
 
