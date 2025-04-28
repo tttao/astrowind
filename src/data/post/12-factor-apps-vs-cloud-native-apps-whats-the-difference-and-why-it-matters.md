@@ -54,7 +54,9 @@ Cloud computing is built on the foundations of Infrastructure as a Service (IaaS
 
 ## Twelve-Factor App: the Foundation for Cloud-Native
 
-## Why It Matters for Modern Application Development
+
+When we look closely, it's clear that cloud-native applications share many similarities with the principles outlined in the Twelve-Factor App methodology. In fact, cloud-native apps often *build upon* these principles, leveraging them as a foundation for designing scalable, portable, and resilient systems. Concepts like strict separation of configuration, statelessness, and dependency management are just as critical in cloud-native environments as they were in the original Twelve-Factor vision — only now, they are extended and complemented by modern practices like container orchestration, service meshes, and dynamic scaling.
+
 
 ## Further Reading
 
