@@ -66,26 +66,27 @@ Déclarer toutes les dépendances dans un manifeste (ex. : `package.json`, `pom.
 * Utiliser `.env` ou des gestionnaires de secrets
 * Ne rien coder en dur pour gérer les différences de comportement entre environnemens
 
-  4. Backing Services
+### 4. Services externes
 
-Databases, caches, queues—these are **backing services**. Treat them as attached resources, referenced via config.
+Les bases de données, caches ou files de messages sont des services externes. Les considérer comme des ressources.
 
 ✅ **Checklist**  
 
-* Access external services via URLs or service locators  
-* Make it easy to swap one service for another (e.g., MySQL for PostgreSQL)
+* Accès via URLs ou service locators
+* On doit pouvoir remplacer facilement un service par un autre (e.g. MySQL par Postgre) via la conf
 
 ### 5. Build, Release, Run
 
-Split your deployment pipeline into three distinct stages:\
-**Build** → Compile code and assets\
-**Release** → Combine with config\
-**Run** → Execute in production
+Séparer le pipeline en 3 étapes :
 
-✅ **Checklist**  
+* **Build** → Compilation
+* **Release** → Intégration avec la config
+* **Run** → Exécution
 
-* Use CI/CD to automate builds  
-* Store artifacts separately from runtime environments
+✅ **Checklist**
+
+* CI/CD pour automatiser les builds
+* Artéfacts séparés des environnements
 
 ### 6. Processes
 
