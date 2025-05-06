@@ -197,7 +197,9 @@ La vérité, c’est que la méthode 12-Factor est l’**ancêtre spirituel** du
 | Parité dev/prod             | Pipelines CI/CD immuables                 |
 | Concurrence par processus   | Autoscaling horizontal via orchestrateurs |
 
-Cloud-native architecture simply takes the 12-Factor philosophy and scales it **horizontally and operationally** using modern cloud primitives.
+
+
+Le cloud-native reprend les principes des 12 facteurs et les **étend horizontalement et opérationnellement** avec les outils modernes du cloud.
 
 ## Why This Matters: Choosing the Right Plan
 
