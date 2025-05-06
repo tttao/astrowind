@@ -106,14 +106,14 @@ L’application doit exposer son propre serveur web (ex. Express, Spring Boot), 
 * Utiliser les servers fournis par le framework utilisé (ex. Express.js, Spring Boot)  
 * Le `$PORT` est défini dans une variable d'environment
 
-### 8. Concurrency
+### 8. Concurrence
 
-Scale your app by **running multiple processes**. Each type of workload (web, worker, etc.) can scale independently.
+Possibilité de montée en charge via des **processus multiples** et indépendants.
 
 ✅ **Checklist**  
 
-* Use horizontal scaling  
-* Run different process types separately (web, workers)
+* Scalabilité horizontale
+* Séparer les rôles (web, workers…)
 
 ### 9. Disposability
 
