@@ -197,67 +197,72 @@ La vérité, c’est que la méthode 12-Factor est l’**ancêtre spirituel** du
 | Parité dev/prod             | Pipelines CI/CD immuables                 |
 | Concurrence par processus   | Autoscaling horizontal via orchestrateurs |
 
-
-
 Le cloud-native reprend les principes des 12 facteurs et les **étend horizontalement et opérationnellement** avec les outils modernes du cloud.
 
-## Why This Matters: Choosing the Right Plan
+## Pourquoi c’est important : choisir la bonne stratégie
 
-Whether you’re designing a new SaaS platform, migrating legacy monoliths, or launching microservices, your **development plan** matters.
+Que vous créiez une nouvelle plateforme SaaS, que vous migriez un monolithe ou lanciez des microservices, votre plan de développement est essentiel.
 
-Here’s how to choose the right approach:
+Scénarios et recommandations:
 
-| Scenario                         | Recommended Approach                             |
-| -------------------------------- | ------------------------------------------------ |
-| Greenfield microservices project | Start with 12-Factor → Adopt cloud-native tools  |
-| Legacy monolith migration        | Refactor using 12-Factor as a checklist          |
-| Serverless backend               | Apply 12-Factor rules (especially statelessness) |
-| Kubernetes deployment            | Use both models: 12-Factor + cloud-native stack  |
+| **Scenario**                    | **Approche recommandée**                 |     |
+| ------------------------------- | ---------------------------------------- | --- |
+| Projet microservices greenfield | Démarrer en 12-Factor, puis outils cloud |     |
+| Migration de monolithe          | Refactor avec la checklist 12-Factor     |     |
+| Backend serverless              | Appliquer les principes 12-Factor        |     |
+| Déploiement sur Kubernetes      | Combiner 12-Factor et stack cloud-native |     |
 
 ✅ **Checklist to move toward Cloud-Native**  
 
-* Refactor apps using 12-Factor principles  
-* Containerize and adopt orchestration (Kubernetes)  
-* Implement CI/CD for automated builds and releases  
-* Use IaC (Terraform, Pulumi) for reproducible infra  
-* Integrate observability tools (Prometheus, Grafana)  
-* Enforce security at every layer (Zero Trust, policies)  
+* * Refactoriser selon les 12 facteurs
+* * Conteneuriser et utiliser un orchestrateur de containeurs (ex. Kubernetes)   
+
+  * CI/CD pour automatiser les builds et les releases  
+* Utiliser l'infra as code (ex Terraform) pour de l'infrastructure reproductible
+* Utiliser des outils d'observabilité (Prometheus, Grafana)  
+* Sécurité à toutes les couches  
 
 ## Conclusion
 
-12-Factor Apps and Cloud-Native Apps are not mutually exclusive. In fact, the latter is often a natural evolution of the former.
+Les applications 12-Factor et cloud-native **ne s’excluent pas**.
 
-**Think of the 12-Factor methodology as the bedrock**—a timeless set of rules that remain relevant, even as the tech stack evolves.
+En réalité, les secondes sont souvent **l’évolution naturelle** des premières.
 
-**Cloud-native practices extend that foundation**, enabling scalability, resilience, and agility at unprecedented levels.
+Voyez les 12 facteurs comme une fondation intemporelle.
 
-If you're building for the cloud, on the cloud, or *because* of the cloud, embracing both frameworks is not optional—it's essential.
+Le cloud-native en est l’extension moderne, orientée scalabilité, agilité et robustesse.
 
-Ready to modernize your architecture?
+**Vous développez pour le cloud, dans le cloud, ou à cause du cloud ?**
 
-💡 **Take the next step**: Audit your application today using the 12 factors. Then, map your cloud-native strategy for the next quarter.
+Alors adopter les deux approches n’est pas une option — c’est indispensable.
+
+💡 **Prochain pas :** Auditez votre application avec les 12 facteurs. Puis, tracez votre stratégie cloud-native pour les prochains mois.
+
+
 
 ## FAQ
 
-### ❓What is the main difference between a 12-Factor App and a Cloud-Native App?
+❓ **Quelle est la principale différence entre une app 12-Factor et une app cloud-native ?**
 
-A 12-Factor App is a methodology for building scalable and maintainable apps, while a Cloud-Native App leverages cloud infrastructure and practices like orchestration, observability, and automation. One is a philosophy of design, the other is an operational reality.
+Une app 12-Factor suit une méthode de conception, tandis qu’une app cloud-native s’appuie sur l’infrastructure cloud et les pratiques opérationnelles modernes. L’une est une philosophie, l’autre une réalité opérationnelle.
 
-### ❓Can a Cloud-Native App ignore the 12-Factor methodology?
+❓ **Peut-on ignorer les 12 facteurs en cloud-native ?**
 
-Not really. Most successful cloud-native apps implicitly follow the 12-Factor principles. It's hard to build scalable microservices without statelessness or proper config management.
+Pas vraiment. La plupart des apps cloud-native performantes respectent implicitement les 12 principes.
 
-### ❓Is 12-Factor outdated in 2025?
+❓ **La méthode 12-Factor est-elle dépassée en 2025 ?**
 
-Absolutely not. The 12-Factor principles are still relevant and often form the baseline for cloud-native and microservices best practices.
+Absolument pas. Elle reste un socle essentiel, même dans les environnements modernes.
 
-### ❓Can I apply 12-Factor principles to serverless or container-based apps?
+❓ **Peut-on appliquer les 12 facteurs aux apps serverless ou conteneurisées ?**
 
-Yes. Whether you're using AWS Lambda, Google Cloud Run, or Kubernetes, the core principles like config separation, statelessness, and disposability still apply.
+Oui, totalement. Les principes fondamentaux s’appliquent dans tous ces cas.
 
-### ❓Do I need Kubernetes to be Cloud-Native?
+❓ **Faut-il Kubernetes pour être cloud-native ?**
 
-No—but Kubernetes is one of the most popular orchestration tools that facilitates cloud-native architecture. You can be cloud-native using serverless, PaaS, or managed services.
+Non, même si Kubernetes est un outil central, on peut être cloud-native avec du serverless, du PaaS ou d’autres services managés.
+
+
 
 ## References
 
