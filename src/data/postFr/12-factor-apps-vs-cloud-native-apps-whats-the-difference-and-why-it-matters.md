@@ -165,37 +165,37 @@ Voyons ça en détail.
 
 ### Caractéristiques clés
 
-- **Résilience** : tolérance aux pannes
-- **Scalabilité** : adaptation automatique à la charge
-- **Observabilité** : visibilité sur les métriques, logs, traces
-- **Automatisation** : CI/CD, IaC, gouvernance
-- **Couplage faible** : microservices et modularité
+* **Résilience** : tolérance aux pannes
+* **Scalabilité** : adaptation automatique à la charge
+* **Observabilité** : visibilité sur les métriques, logs, traces
+* **Automatisation** : CI/CD, IaC, gouvernance
+* **Couplage faible** : microservices et modularité
 
 ### Technologies cloud-native (liste non exhaustive)
 
-- Conteneurs (Docker)
-- Orchestration (Kubernetes)
-- Service Mesh (Istio)
-- Infrastructure immuable
-- Fonctions serverless
-- APIs déclaratives (GraphQL, REST)
+* Conteneurs (Docker)
+* Orchestration (Kubernetes)
+* Service Mesh (Istio)
+* Infrastructure immuable
+* Fonctions serverless
+* APIs déclaratives (GraphQL, REST)
 
 ## Application 12-Factor : la fondation du cloud-native
 
-So how do the Twelve-Factor principles relate to cloud-native architecture?
+En quoi les 12 facteurs sont-ils liés au cloud-native ?
 
-In many ways, **the Twelve-Factor App is the spiritual ancestor of cloud-native thinking**. Its ideas—statelessness, configuration management, disposability—are now *requirements* for cloud-native development.
+La vérité, c’est que la méthode 12-Factor est l’**ancêtre spirituel** du cloud-native. Ses idées (stateless, config externe, jetabilité…) sont aujourd’hui des **prérequis** au cloud-native.
 
-Let’s compare:
+**Comparatif rapide:**
 
-| Twelve-Factor App         | Cloud-Native App                           |
-| ------------------------- | ------------------------------------------ |
-| Stateless processes       | Stateless containers or functions          |
-| Environment-based config  | Declarative configuration via YAML or Helm |
-| Logs to stdout            | Centralized observability pipelines        |
-| One-off admin processes   | Kubernetes Jobs or serverless tasks        |
-| Dev/prod parity           | Immutable CI/CD pipelines                  |
-| Concurrency via processes | Horizontal autoscaling with orchestration  |
+| **Twelve-Factor App**       | **Cloud-Native App**                      |
+| --------------------------- | ----------------------------------------- |
+| Processus stateless         | Conteneurs ou fonctions stateless         |
+| Config par variables d’env. | Config déclarative (YAML, Helm…)          |
+| Logs vers stdout/stderr     | Pipelines d’observabilité centralisés     |
+| Tâches admin ponctuelles    | Jobs Kubernetes, fonctions serverless     |
+| Parité dev/prod             | Pipelines CI/CD immuables                 |
+| Concurrence par processus   | Autoscaling horizontal via orchestrateurs |
 
 Cloud-native architecture simply takes the 12-Factor philosophy and scales it **horizontally and operationally** using modern cloud primitives.
 
