@@ -142,14 +142,14 @@ Les logs sont des flux d’événements. Les écrire sur stdout/stderr, pas sur 
 * Rediriger vers des outils de logs  
 * Pas de rotation de fichiers
 
-### 12. Admin Processes
+### 12. Processus admin
 
-Run one-off admin tasks (like database migrations) in the same environment as the app.
+Les tâches ponctuelles (ex. migration de baes de données) doivent être exécutées dans le même environnement que l’app.
 
 ✅ **Checklist**  
 
-* Automate maintenance scripts  
-* Run from the same codebase as the app
+* Scripts de maintenance automatisés  
+* Depuis la même base de code
 
 ## Definition(s) of a Cloud-Native Application
 
