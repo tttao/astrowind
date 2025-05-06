@@ -135,12 +135,12 @@ Garder les environnements aussi proches que possible pour réduire les **bugs po
 
 ### 11. Logs
 
-Treat logs as event streams. **Don’t write to files**. Output to `stdout` and `stderr`.
+Les logs sont des flux d’événements. Les écrire sur stdout/stderr, pas sur fichiers.
 
 ✅ **Checklist**  
 
-* Pipe logs to log management tools  
-* Avoid file-based log rotation
+* Rediriger vers des outils de logs  
+* Pas de rotation de fichiers
 
 ### 12. Admin Processes
 
