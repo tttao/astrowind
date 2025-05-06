@@ -264,7 +264,7 @@ Non, même si Kubernetes est un outil central, on peut être cloud-native avec d
 
 
 
-## References
+## Références
 
 * [The Twelve-Factor App](https://12factor.net)
 * [Cloud Native Computing Foundation](https://www.cncf.io/)
