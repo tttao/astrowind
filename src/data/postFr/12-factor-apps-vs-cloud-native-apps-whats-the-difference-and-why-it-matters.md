@@ -88,23 +88,23 @@ Séparer le pipeline en 3 étapes :
 * CI/CD pour automatiser les builds
 * Artéfacts séparés des environnements
 
-### 6. Processes
+### 6. Processus
 
-Design your app as **stateless processes**. Share nothing. Use external systems for persistence.
-
-✅ **Checklist**  
-
-* Don’t rely on local filesystems  
-* Use databases, queues, or distributed caches
-
-### 7. Port Binding
-
-Your app should **self-contain its web server** and expose a port. Don’t rely on Apache or Nginx.
+L’application doit être conçue comme des processus **sans état**. La persistance doit être externe.
 
 ✅ **Checklist**  
 
-* Use framework-provided servers (e.g., Express.js, Spring Boot)  
-* Bind to `$PORT` from environment
+* Pas de fichiers locaux
+* Utilisation de DB, queues, caches distribués
+
+### 7. Binding de port
+
+L’application doit exposer son propre serveur web (ex. Express, Spring Boot), sans dépendre d’Apache ou Nginx.
+
+✅ **Checklist**  
+
+* Utiliser les servers fournis par le framework utilisé (ex. Express.js, Spring Boot)  
+* Le `$PORT` est défini dans une variable d'environment
 
 ### 8. Concurrency
 
