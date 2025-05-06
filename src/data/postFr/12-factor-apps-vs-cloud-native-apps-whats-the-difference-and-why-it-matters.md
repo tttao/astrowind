@@ -151,36 +151,36 @@ Les tâches ponctuelles (ex. migration de baes de données) doivent être exécu
 * Scripts de maintenance automatisés  
 * Depuis la même base de code
 
-## Definition(s) of a Cloud-Native Application
+### Définition(s) d’une application cloud-native
 
-Ask ten developers what “cloud-native” means, and you might get ten different answers.
+Demandez à 10 développeurs ce que signifie « cloud-native », vous obtiendrez 10 réponses différentes.
 
-Some think it’s simply “apps that run in the cloud.” Others associate it with Kubernetes, microservices, or serverless. The truth is more nuanced—and **more powerful**.
+Pour certains, ce sont juste des apps qui tournent dans le cloud. Pour d’autres, c’est Kubernetes, le serverless ou les microservices. La réalité est plus subtile.
 
-The [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io) defines cloud-native apps as:
+Selon la [Cloud Native Computing Foundation (CNCF), ](https://www.cncf.io)une application cloud-native est :
 
-> "Loosely coupled systems that interoperate in a manner that is secure, resilient, manageable, sustainable, and observable."
+> "Un système faiblement couplé, interopérable, sécurisé, résilient, gérable, durable et observable."
 
-Let’s break that down.
+Voyons ça en détail.
 
-### Core Characteristics of Cloud-Native Apps
+### Caractéristiques clés
 
-1. **Resilience** – Built to handle failure gracefully. The system doesn’t crash just because one service goes down.
-2. **Scalability** – Can grow or shrink dynamically based on demand.
-3. **Observability** – Deep insights into metrics, traces, logs, and behavior.
-4. **Automation** – CI/CD pipelines, Infrastructure as Code (IaC), policy-driven governance.
-5. **Loose Coupling** – Microservices architecture enables flexibility and modularity.
+- **Résilience** : tolérance aux pannes
+- **Scalabilité** : adaptation automatique à la charge
+- **Observabilité** : visibilité sur les métriques, logs, traces
+- **Automatisation** : CI/CD, IaC, gouvernance
+- **Couplage faible** : microservices et modularité
 
-### Cloud-Native Technologies (Not Exhaustive)
+### Technologies cloud-native (liste non exhaustive)
 
-* Containers (e.g., Docker)
-* Orchestration (e.g., Kubernetes)
-* Service Mesh (e.g., Istio)
-* Immutable Infrastructure
-* Serverless Functions
-* Declarative APIs (e.g., GraphQL, REST)
+- Conteneurs (Docker)
+- Orchestration (Kubernetes)
+- Service Mesh (Istio)
+- Infrastructure immuable
+- Fonctions serverless
+- APIs déclaratives (GraphQL, REST)
 
-## Twelve-Factor App: The Foundation for Cloud-Native
+## Application 12-Factor : la fondation du cloud-native
 
 So how do the Twelve-Factor principles relate to cloud-native architecture?
 
