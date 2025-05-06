@@ -1,5 +1,5 @@
 ---
-import Layout from '~/layouts/en/PageLayout.astro';
+import Layout from '~/layouts/fr/PageLayout.astro';
 
 import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
@@ -8,7 +8,7 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Steps from '~/components/widgets/Steps.astro';
-import BlogLatestPosts from '~/components/en/BlogLatestPosts.astro';
+import BlogLatestPosts from '~/components/fr/BlogLatestPosts.astro';
 import { getPermalink } from '~/utils/permalinks';
 import blogEnabled from '~/../envConfig';
 const metadata = {
@@ -25,11 +25,11 @@ const metadata = {
     id="hero"
     title="Fabrice Monnier"
     tagline="Freelance DevOps - Architecture - Cloud"
-    actions={[{ variant: 'primary', text: 'Contact me', href: getPermalink('#contact') }]}
+    actions={[{ variant: 'primary', text: 'Contacte moi', href: getPermalink('#contact') }]}
   >
     <Fragment slot="subtitle">
-      I’m an IT expert with over 20 years of experience, helping businesses design technical solutions that address real-world challenges. <br />
-      My specialities are DevOps, Backend Development and Cloud Computing.
+      Je suis un expert en informatique avec plus de 20 ans d'expérience, aidant les entreprises à concevoir des solutions techniques répondant à des problématiques concrètes. <br />
+      Mes spécialités sont le DevOps, le développement backend et le cloud computing.
     </Fragment>
   </Hero>
 
@@ -46,16 +46,18 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">A Propos</h2>
       <p>
-        I’m a freelance software and cloud architect with several years of experience designing, building, and delivering robust, scalable solutions that meets your business requirements.
+        Je suis architecte logiciel et cloud freelance, avec plusieurs années d’expérience dans la conception, le développement et la livraison de solutions robustes et évolutives répondant aux besoins de votre entreprise.
       </p>
       <br />
       <p>
-        Specialized in AWS (with 6 certifications), I support your cloud, data, and application projects from initial planning to production deployment.
+        Spécialisé sur AWS (avec 6 certifications), je vous accompagne sur vos projets cloud, data et applicatifs, de la planification initiale jusqu’au déploiement en production.
       </p>
       <br />
-      <p>Before going freelance, I worked with software vendors and investment banks, both in France and internationally, giving me the opportunity to work with a wide range of clients.</p>
+      <p>
+        Avant de me lancer en freelance, j’ai travaillé avec des éditeurs de logiciels et des banques d’investissement, en France et à l’international, ce qui m’a permis de collaborer avec une grande variété de clients.
+      </p>
     </Fragment>
 
     <Fragment slot="bg">
@@ -72,43 +74,61 @@ const metadata = {
       {
         title:
           'Solutions Consultant <br /> <span class="font-normal">Ataccama (Data Quality SaaS vendor), Paris (Full Remote), France</span> <br /> <span class="text-sm font-normal">2022 - Present</span>',
-        description: `Demonstrate the business value of Attacama's product to prospects through proof of concepts and workshops. <br /> Prototypes (e.g. integration to Databricks, AWS, Azure). <br />`,
+        description: `Démontrer la valeur métier du produit d'Ataccama auprès des prospects à travers des preuves de concept et des ateliers.<br /> 
+Prototypes (par exemple : intégration avec Databricks, AWS, Azure). <br />`,
         icon: 'tabler:briefcase',
       },
       {
         title:
           'AWS Solutions Architect <br /> <span class="font-normal">Amazon Web Services, Paris, France</span> <br /> <span class="text-sm font-normal">2021 - 2022</span>',
-        description: `Assisted existing clients and prospects in building cloud architectures on AWS. <br /> Delivered proof of concepts. <br /> Presented webinars, organized workshops to demonstrate AWS value proposal.`,
+        description: `Accompagnement des clients existants et des prospects dans la conception d’architectures cloud sur AWS.<br />
+Réalisation de preuves de concept.<br />
+Présentation de webinaires et organisation d’ateliers pour démontrer la proposition de valeur d’AWS.`,
         icon: 'tabler:briefcase',
       },
       {
         title:
           'Technical Architect <br /> <span class="font-normal">Societe Generale Investment Banking, Paris, France</span> <br /> <span class="text-sm font-normal">2020 - 2021</span>',
-        description: `Technical architect for the Risk IT Department at SGIB, supporting development teams in Paris and Bangalore in migrating the Risk Information System to Microsoft Azure public cloud. <br /> Java, Spark, Kafka, Hadoop, Docker, Kubernetes, Microsoft Azure (HDInsight, AKS).`,
+        description: `Architecte technique pour le département IT Risques de SGIB, en support des équipes de développement à Paris et à Bangalore pour la migration du système d'information risques vers le cloud public Microsoft Azure.<br />
+Java, Spark, Kafka, Hadoop, Docker, Kubernetes, Microsoft Azure (HDInsight, AKS).
+`,
         icon: 'tabler:briefcase',
       },
       {
         title:
           'Senior Technical Leader - Cloud & Big Data <br /> <span class="font-normal">Societe Generale Investment Banking, Paris, France</span> <br /> <span class="text-sm font-normal">2017 - 2020</span>',
-        description: `Technical lead for the central repository of pre-trade and post-trade data at SGIB, aggregated for regulatory reporting and risk analysis. <br /> Designed and developed APIs using the Java Spring Boot / Spring Cloud stack.<br /> Architected and built large-scale data processing pipelines on Hadoop/Spark and Microsoft Azure.<br /> Led the progressive migration of data processing workflows to Azure cloud.<br /> Managed a team of 10 developers in Paris and 2 developers in India.`,
+        description: `Technical lead pour le référentiel central des données pré-trade et post-trade chez SGIB, agrégées à des fins de reporting réglementaire et d’analyse des risques.<br />
+Conception et développement d’API avec la stack Java Spring Boot / Spring Cloud.<br />
+Architecture et mise en place de pipelines de traitement de données à grande échelle sur Hadoop/S
+`,
         icon: 'tabler:briefcase',
       },
       {
         title:
           'Technical Leader & Scrum Master - Full Stack <br /> <span class="font-normal">Lyxor Asset Management, Paris, France</span> <br /> <span class="text-sm font-normal">2014 - 2010</span>',
-        description: `Full-stack developer & technical lead<br /> Front End: Apache/PHP/MySQL, AngularJS, jQuery, Bootstrap. <br /> Back End: Java, SOAP web services, custom computation engine interfacing with an Oracle 11G database via JMS queue.`,
+        description: `Développeur full-stack et technical lead<br />
+Front-end : Apache/PHP/MySQL, AngularJS, jQuery, Bootstrap.<br />
+Back-end : Java, services web SOAP, moteur de calcul personnalisé interfaçé avec une base de données Oracle 11G via JMS.
+`,
         icon: 'tabler:briefcase',
       },
       {
         title:
           'Technical Leader & Project Manager <br /> <span class="font-normal">Societe Generale / Risk Management, Paris, France</span> <br /> <span class="text-sm font-normal">2010 - 2014</span>',
-        description: `Large scale regulatory program (Basel 2 compliance). <br /> Team management (2 Business Analysts, 6 Developers). <br /> Project Management. <br /> Coordination with off-shore team in Bangalore (1 Business Analyst/4 Developers). <br /> Technical & Functional Lead.`,
+        description: `Programme réglementaire de grande envergure (conformité Bâle 2).<br />
+Management d’équipe (2 Business Analysts, 6 Développeurs).<br />
+Gestion de projet.<br />
+Coordination avec l’équipe off-shore à Bangalore (1 Business Analyst / 4 Développeurs).<br />
+Responsable technique et fonctionnel.
+`,
         icon: 'tabler:briefcase',
       },
       {
         title:
           'Senior Developer <br /> <span class="font-normal">Reuters Financial Software, Paris, France</span> <br /> <span class="text-sm font-normal">2002 - 2010</span>',
-        description: `C, C++ and Java developer. <br /> Web developer (JSP, Servlets).`,
+        description: `Développeur C, C++ et Java.<br />
+Développeur web (JSP, Servlets).
+`,
         icon: 'tabler:briefcase',
       }
     ]}
@@ -119,14 +139,14 @@ const metadata = {
 
   <Steps
     id="resume"
-    title="Education"
+    title="Diplômes"
     items={[
       {
-        title: `Master of Computer Science<br /> <span class="font-normal">Ecole Française d'Electronique et d'Informatique (EFREI) - Paris, France</span> <br /> <span class="text-sm font-normal">1997 - 2002</span>`,
+        title: `Ingénieur en Systèmes d'Information & Management<br /> <span class="font-normal">Ecole Française d'Electronique et d'Informatique (EFREI) - Paris, France</span> <br /> <span class="text-sm font-normal">1997 - 2002</span>`,
         icon: 'tabler:school',
       },
       {
-        title: `Master in Finance<br /> <span class="font-normal">CNAM - ESSEC - Paris, France</span> <br /> <span class="text-sm font-normal">2007 - 2009</span>`,
+        title: `Master en Finance de Marché<br /> <span class="font-normal">CNAM - ESSEC - Paris, France</span> <br /> <span class="text-sm font-normal">2007 - 2009</span>`,
         icon: 'tabler:school',
       },
     ]}
@@ -136,30 +156,30 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Skills"
-    subtitle="Discover the proficiencies that allow me to deliver value through software craftmanship."
+    title="Compétences"
+    subtitle="Mes compétences pour livrer vos projets et concevoir des applications robustes et maintenables."
     columns={3}
     defaultIcon="tabler:point-filled"
     items={[
       {
         title: 'Cloud Computing',
-        description: 'Proficient in operating and building applications for AWS and Microsoft Azure.',
+        description: 'Architecture, création et déploiement d\'applications Cloud Native.',
       },
       {
         title: 'Data Platforms',
-        description: 'Extensive knowledge of Cloud warehouses (Snowflake, Amazon Redshift), Streaming platforms (Kafka, JMS, Amazon Kinesis), Big data ecosystem (Hadoop, Spark, Hive, HBase, Databricks) and relational databases (PostgreSQL, Oracle, SQL Server).',
+        description: 'Connaissances approfondies de data warehouse cloud, de plateformes de streaming, de plateformes Big Data et des bases de données SQL et NoSQL.',
       },
       {
         title: 'Languages/Frameworks',
-        description: 'Deep knowledge of Java, Python, Spring framework (Spring Core, Spring Boot, Spring CLoud), NodeJS, Apache NiFi, and much more',
+        description: 'Connaissances approfondies de Java, Python, du framework Spring (Spring Core, Spring Boot, Spring Cloud), NodeJS, Apache NiFi, et bien plus encore.',
       },
       {
         title: 'DevOps',
-        description: 'Fluent with Maven, Jenkins, Sonar, GitHub, GitLab, ElasticSearch, Logstash, Kibana, Docker/Kubernetes.',
+        description: 'Maîtrise de Maven, Jenkins, Sonar, GitHub, GitLab, ElasticSearch, Logstash, Kibana, Docker/Kubernetes.',
       },
       {
         title: 'Delivery processes',
-        description: 'Experience in project management and Agile processes.',
+        description: 'Expérience en gestion de projet et dans les processus Agile.',
       },
       {
         title: 'Software Craftmanship',
@@ -172,8 +192,8 @@ const metadata = {
 
   <CallToAction
     id="contact"
-    title="Let's connect"
-    subtitle="Whether you are looking for help on your projects, or just willing to chat."
+    title="Connectons nous"
+    subtitle="Connectons-nous pour discuter de vos projets et explorer comment je peux vous accompagner."
     actions={[
       {
         variant: 'primary',
@@ -194,8 +214,8 @@ const metadata = {
   {blogEnabled() && 
   <BlogLatestPosts
     id="blog"
-    title="Explore my insightful articles on my blog"
-    information={`Articles and thoughts around software development, architecture, cloud and GenAI. And maybe more.`}
+    title="Découvrez mes articles sur mon blog."
+    information={`Articles et réflexions autour du développement logiciel, de l'architecture, du cloud.`}
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>

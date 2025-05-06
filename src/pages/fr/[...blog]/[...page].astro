@@ -1,13 +1,13 @@
 ---
 import type { InferGetStaticPropsType, GetStaticPaths } from 'astro';
 
-import Layout from '~/layouts/PageLayout.astro';
+import Layout from '~/layouts/fr/PageLayout.astro';
 import BlogList from '~/components/blog/List.astro';
 import Headline from '~/components/blog/Headline.astro';
 import Pagination from '~/components/blog/Pagination.astro';
 // import PostTags from "~/components/blog/Tags.astro";
 
-import { blogListRobots, getStaticPathsBlogList } from '~/utils/blog';
+import { blogListRobots, getStaticPathsBlogList } from '~/utils/fr/blog';
 
 export const prerender = true;
 
@@ -42,7 +42,7 @@ const metadata = {
     >
       The Blog
     </Headline>
-    <BlogList posts={page.data} />
+    <BlogList posts={page.data} langage='fr' />
     <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
     <!--
       <PostTags tags={allCategories} class="mb-2" title="Search by Categories:" isCategory />

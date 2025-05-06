@@ -3,12 +3,12 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     { text: 'Home', href: '#' },
-    { text: 'About', href: '#about' },
-    { text: 'Resume', href: '#resume' }
+    { text: 'A Propos', href: '#about' },
+    { text: 'CV', href: '#resume' }
   ],
   actions: [
     {
-      text: 'Contact me',
+      text: 'Contacte moi',
       href: '#contact',
     }
   ]
@@ -17,13 +17,13 @@ export const headerData = {
 export const headerBlogData = {
   links: [
     { text: 'Home', href: '/' },
-    { text: 'About', href: '/#about' },
-    { text: 'Resume', href: '/#resume' },
-    { text: 'Blog', href: '/blog' }
+    { text: 'A Propos', href: '/fr#about' },
+    { text: 'CV', href: '/fr#resume' },
+    { text: 'Blog', href: '/fr/blog' }
   ],
   actions: [
     {
-      text: 'Contact me',
+      text: 'Contacte moi',
       href: '#contact',
     }
   ]

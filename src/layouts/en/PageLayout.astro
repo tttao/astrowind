@@ -1,0 +1,39 @@
+---
+import Layout from '~/layouts/en/Layout.astro';
+import Header from '~/components/widgets/Header.astro';
+import Footer from '~/components/widgets/Footer.astro';
+import Announcement from '~/components/widgets/Announcement.astro';
+
+import blogEnabled from '~/../envConfig';
+
+import { headerData } from '~/navigationEn';
+import { headerBlogData } from '~/navigationEn';
+
+
+import type { MetaData } from '~/types';
+
+export interface Props {
+  metadata?: MetaData;
+}
+
+const { metadata } = Astro.props;
+
+if (blogEnabled()) {
+  headerData.links.push({ text: 'Blog', href: '#blog' });
+}
+---
+
+<Layout metadata={metadata}>
+  <slot name="header">
+    {blogEnabled() &&
+    <Header {...headerBlogData} isSticky showToggleTheme />
+    }
+    {!blogEnabled() &&
+      <Header {...headerData} isSticky showToggleTheme />
+    }
+  </slot>
+  <main>
+    <slot />
+  </main>
+
+</Layout>

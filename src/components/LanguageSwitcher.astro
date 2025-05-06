@@ -1,0 +1,10 @@
+---
+// src/components/LanguageSwitcher.astro
+const currentLang = Astro.url.pathname.split('/')[1] || 'en';
+const otherLang = currentLang === 'en' ? 'fr' : 'en';
+
+const switchTo = Astro.url.pathname.replace(`/${currentLang}`, `/${otherLang}`);
+---
+<a href={switchTo} class="px-4 py-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700">
+  🌐 {otherLang.toUpperCase()}
+</a>

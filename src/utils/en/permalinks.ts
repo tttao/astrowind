@@ -39,7 +39,7 @@ export const getCanonical = (path = ''): string | URL => {
 };
 
 /** */
-export const getPermalink = (slug = '', type = 'page', langage = 'en'): string => {
+export const getPermalink = (slug = '', type = 'page', language = 'en'): string => {
   let permalink: string;
 
   if (
@@ -74,7 +74,7 @@ export const getPermalink = (slug = '', type = 'page', langage = 'en'): string =
       break;
 
     case 'post':
-      permalink = createPath(langage, trimSlash(slug));
+      permalink = createPath(language, trimSlash(slug));
       break;
 
     case 'page':
@@ -90,7 +90,7 @@ export const getPermalink = (slug = '', type = 'page', langage = 'en'): string =
 export const getHomePermalink = (): string => getPermalink('/');
 
 /** */
-export const getBlogPermalink = (): string => getPermalink(BLOG_BASE);
+export const getBlogPermalink = (): string => getPermalink('en/' + BLOG_BASE);
 
 /** */
 export const getAsset = (path: string): string =>

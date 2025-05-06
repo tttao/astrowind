@@ -3,25 +3,26 @@ import { APP_BLOG } from 'astrowind:config';
 
 import Grid from '~/components/blog/Grid.astro';
 
-import { getBlogPermalink } from '~/utils/permalinks';
-import { findPostsByIds } from '~/utils/fr/blog';
+import { getBlogPermalink } from '~/utils/fr/permalinks';
+import { findLatestPosts } from '~/utils/fr/blog';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import type { Widget } from '~/types';
+import Button from '../ui/Button.astro';
 
 export interface Props extends Widget {
   title?: string;
   linkText?: string;
   linkUrl?: string | URL;
   information?: string;
-  postIds: string[];
+  count?: number;
 }
 
 const {
   title = await Astro.slots.render('title'),
-  linkText = 'View all posts',
+  linkText = 'Voir tous les posts',
   linkUrl = getBlogPermalink(),
   information = await Astro.slots.render('information'),
-  postIds = [],
+  count = 4,
 
   id,
   isDark = false,
@@ -29,7 +30,7 @@ const {
   bg = await Astro.slots.render('bg'),
 } = Astro.props;
 
-const posts = APP_BLOG.isEnabled ? await findPostsByIds(postIds) : [];
+const posts = APP_BLOG.isEnabled ? await findLatestPosts({ count }) : [];
 ---
 
 {
@@ -43,12 +44,10 @@ const posts = APP_BLOG.isEnabled ? await findPostsByIds(postIds) : [];
               set:html={title}
             />
             {APP_BLOG.list.isEnabled && linkText && linkUrl && (
-              <a
-                class="text-muted dark:text-slate-400 hover:text-primary transition ease-in duration-200 block mb-6 lg:mb-0"
-                href={linkUrl}
-              >
+              <Button variant="link" href={linkUrl}>
+                {' '}
                 {linkText} »
-              </a>
+              </Button>
             )}
           </div>
         )}
@@ -56,7 +55,7 @@ const posts = APP_BLOG.isEnabled ? await findPostsByIds(postIds) : [];
         {information && <p class="text-muted dark:text-slate-400 lg:text-sm lg:max-w-md" set:html={information} />}
       </div>
 
-      <Grid posts={posts} />
+      <Grid posts={posts} langage='fr'/>
     </WidgetWrapper>
   ) : (
     <Fragment />
