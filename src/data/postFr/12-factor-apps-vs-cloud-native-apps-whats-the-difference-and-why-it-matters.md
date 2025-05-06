@@ -54,9 +54,8 @@ Déclarer toutes les dépendances dans un manifeste (ex. : `package.json`, `pom.
 
 ✅ **Checklist**
 
-* * Utiliser des gestionnaires de dépendances natifs (e.g. `npm`, `maven`, `gradle`)
-
-  * Éviter les dépendances cachées
+* Utiliser des gestionnaires de dépendances natifs (e.g. `npm`, `maven`, `gradle`)
+* Éviter les dépendances cachées
 
 ### 3. Config
 
@@ -64,10 +63,10 @@ Déclarer toutes les dépendances dans un manifeste (ex. : `package.json`, `pom.
 
 ✅ **Checklist**  
 
-* Use `.env` or secret managers  
-* Avoid hardcoding anything environment-specific
+* Utiliser `.env` ou des gestionnaires de secrets
+* Ne rien coder en dur pour gérer les différences de comportement entre environnemens
 
-### 4. Backing Services
+  4. Backing Services
 
 Databases, caches, queues—these are **backing services**. Treat them as attached resources, referenced via config.
 
