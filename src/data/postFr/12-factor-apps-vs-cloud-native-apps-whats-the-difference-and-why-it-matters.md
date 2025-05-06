@@ -124,14 +124,14 @@ Démarrage rapide, arrêt propre. Utile pour le scaling rapide et la résilience
 * Éviter les temps de démarrage longs  
 * Gérer correctement les signaux système
 
-### 10. Dev/Prod Parity
+### 10. Parité Dev/Prod
 
-Keep environments as similar as possible to **reduce deployment bugs**. Use the same OS, services, and versions.
+Garder les environnements aussi proches que possible pour réduire les **bugs post- déploiement**. Même OS, mêmes services, et mêmes versions.
 
 ✅ **Checklist**  
 
-* Use containers or VMs  
-* Mirror production in staging
+* Conteneurs/VMs  
+* Répliquer la production en dev/staging
 
 ### 11. Logs
 
