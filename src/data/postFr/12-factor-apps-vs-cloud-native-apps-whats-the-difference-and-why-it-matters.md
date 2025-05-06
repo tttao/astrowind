@@ -115,14 +115,14 @@ Possibilité de montée en charge via des **processus multiples** et indépendan
 * Scalabilité horizontale
 * Séparer les rôles (web, workers…)
 
-### 9. Disposability
+### 9. Jetable
 
-Apps should start fast and shut down cleanly. This helps with rapid scaling and disaster recovery.
+Démarrage rapide, arrêt propre. Utile pour le scaling rapide et la résilience.
 
 ✅ **Checklist**  
 
-* Avoid long boot times  
-* Catch SIGTERM and release resources
+* Éviter les temps de démarrage longs  
+* Gérer correctement les signaux système
 
 ### 10. Dev/Prod Parity
 
