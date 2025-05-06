@@ -14,7 +14,9 @@ author: Fabrice Monnier
 
 **Fondations pour concevoir des applications sécurisées, résilientes, faciles à gérer, durables et observables**
 
-## IntroductionLe monde du développement logiciel évolue à une vitesse fulgurante.
+## Introduction
+
+**Le monde du développement logiciel évolue à une vitesse fulgurante.**
 
 De nouveaux paradigmes émergent, les technologies changent, et avec eux apparaissent de nouvelles attentes quant à la manière de concevoir, déployer et maintenir les applications.
 
